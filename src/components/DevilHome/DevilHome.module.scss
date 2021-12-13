@@ -1,0 +1,56 @@
+
+.DevilsHome {
+    padding-top: 40%;
+    height:50px;
+    color:white;
+    width:350px;
+    margin:0 auto;
+    h1 {
+      width:350px;
+      height:350px;
+      border-radius: 50%;
+      line-height:350px;
+      animation-name: spin;
+      border: 1px solid #666;
+      font-family: 'Sevillana', cursive;
+      
+      text-align: center;
+      transition-property: all;
+      transition-duration: 0.8s;
+      transition-timing-function: ease-in-out;
+      &:hover {
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-color: #666;
+        border: 1px solid darkred;
+        cursor: pointer;
+        color: red;
+        
+
+      }
+    }
+    p {
+        margin-top:20px;
+        color: #ccc;
+        text-align:center;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+.DevilsBtn {
+    width: 100%;
+    text-align:center;
+    font-size:1.6rem;
+    background-color:rgb(73, 1, 1);
+    color:white;
+    border:1px solid #666;
+    height:35px;
+    margin: 10px 0;
+}

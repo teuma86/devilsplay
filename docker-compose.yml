@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: the_devil
+    restart: always
+    volumes:
+      - './src/:/app'
+      - '/app/node_modules'
+      - '/app/.next'
+    ports:
+      - 666:3000
