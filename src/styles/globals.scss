@@ -4,7 +4,7 @@ $fontDevil: 'Sevillana', cursive;
 $fontStandard: 'Ubuntu', sans-serif;
 :root {
   --frame-max-width: 1200px;
-  --header-height: 60px;
+  --header-height: 30px;
   --reset-value:10px;
   --font-deveil: $fontDevil;
   
@@ -59,7 +59,7 @@ p {
 
 main {
   @include mainElementWrapper;
-  height: calc(97vh - ((var(--reset-value) *2) + var(--header-height)));
+  height: calc(90vh - ((var(--reset-value) *2) + var(--header-height)));
   background-color:red;
   box-shadow: 5px 5px 5px #333;
   border-radius: 15px;
@@ -83,4 +83,9 @@ nav {
 
 footer {
   @include mainElementWrapper;
+  text-align: center;
+  margin-top:15px;
+  color:#FFF;
+  font-family: Ubuntu;
+  font-style: italic;
 }

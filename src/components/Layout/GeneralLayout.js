@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { PureComponent } from "react";
 import Head from 'next/head'
+import Link from 'next/link'
 
 import './GeneralLayout.module.scss'
 
@@ -38,7 +39,8 @@ export class GeneralLayout extends PureComponent {
     renderFooter() {
         return (
             <footer>
-                {/* footer coming soon */}
+                <Link href="https://github.com/teuma86/devilsplay">Git hub source code</Link>
+                
             </footer>
         )
     }
